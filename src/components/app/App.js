@@ -34,7 +34,7 @@ class App extends Component {
 
   onDelete = (id) => {
     this.setState(({ data }) => ({
-      data: data.filter((c) => c.id != id),
+      data: data.filter((c) => c.id !== id),
     }));
   };
 
@@ -50,8 +50,6 @@ class App extends Component {
       data: [...data, newItem],
     }));
   };
-
-
 
   render() {
     const { data } = this.state;
